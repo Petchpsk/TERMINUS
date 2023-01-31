@@ -1,19 +1,32 @@
 .lw { font-size: 60px; }
 body{
-  
+
   background-color:rgb(29, 98, 56, 0.81);
 }
-.function {
+/* .function {
       height: 600px;
       width: 15%;
       background-color:rgba(64, 120, 110, 1); 
-      text-align: center;
       padding-left: 10px;
-    }
-.function ul li a {
-  color: white;
+    } */
+.function ul {
+  list-style-type: none;
+  height: 600px;
+  margin: 0;
+  padding: 0;
+  width: 17%;
+  background-color:rgba(64, 120, 110, 1)
+}
+.function a {
+  text-align: center;
+  color: black;
+  display: block;
   padding-top: 10px;
-
+  text-decoration: none;
+}
+.function li a:hover {
+  background-color: #000;
+  color: white;
 }
 *{
   padding: 0;
