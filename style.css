@@ -1,6 +1,5 @@
 .lw { font-size: 60px; }
 body{
-
   background-color:rgb(29, 98, 56, 0.81);
 }
 /* .function {
@@ -14,6 +13,7 @@ body{
   height: 600px;
   margin: 0;
   padding: 0;
+  padding-top: 40px;
   width: 17%;
   background-color:rgba(64, 120, 110, 1)
 }
