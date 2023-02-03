@@ -1,86 +1,279 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: 0;
-  }
-body {
-    border: solid;
-    max-width: 1020px;
-    background-color:rgb(29, 98, 56, 0.81);
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
 }
-.top_header {
-    display: flex;
-    padding: 0;
+a {
+  font-family: "Itim", cursive;
 }
-.nav_bar {
-    color: white;
-    padding: 15px;
-    text-decoration: none;
+p {
+  font-family: "Itim", cursive;
 }
-.brand {
-    padding-left: 0;
-    font-size: 18px;
-    font-weight: 600px;
+.con-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem;
+  background-color: #1d6256;
 }
-.main_container {
-    display: flex;
+nav{
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
-.menu_bar {
-    border-radius: 0.5cm;
-    width: max-content;
-    background-color:rgba(64, 120, 110, 1)
+.logo a {
+  text-decoration: none;
+  font-size: 3.6vw;
+  color: white;
 }
-.menu_bar a{
-    text-align: center;
-    padding-top: 40px;
-    color: black;
-    display: block;
-    text-decoration: none;
+.logo ul {
+  list-style: none;
 }
-.menu_bar a:hover {
-    background-color: #000;
-    color: white;
+.menu ul {
+  display: flex;
+  list-style: none;
+  column-gap: 5rem;
 }
-.containt {
-    max-width: 600px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
+.menu li a {
+  text-decoration: none;
+  color: white;
+  font-size: 2vw;
 }
-.text{
-    margin: auto;
-    padding-top: 40px;
+.search {
+  position: relative;
 }
-.text h1{
-    text-align: center;
-    font-size: 30px;
-    font-weight: 700px;
+.search input {
+  padding: 7px 7rem;
+  border-radius: 2rem;
 }
-.main_box {
-    display: grid;
-    grid-template-columns: auto auto;
+.search button {
+  position: absolute;
+  top: 8px;
+  right: 20px;
+}
+.bar {
+  position: relative;
+  padding-left: 3rem;
+  padding-top: 2rem;
+  background-color: #4c998c;
+  border-radius: 10px;
+  opacity: 0.7;
+  width: 30%;
+}
+.bar li {
+  padding: 2vw;
+}
+.bar ul {
+  list-style: none;
+}
+.bar li a {
+  text-decoration: none;
+  font-size: 1.5vw;
+  color: white;
+  
+}
+.bar i{
+  font-size: 1.8vw;
+  padding-right: 2vw;
+}
+.bar img{
+  width: 2vw;
+  height: 2vw;
+  padding-right: 2vw;
 
 }
-.box {
-    border-radius: 0.5cm;
-    background-color: rgb(25, 83, 50);
-    padding: 20px;
-    margin: 30px;
+.con-body {
+  display: flex;
+  gap: 20rem;
+  background-color: #1d6256;
 }
-.image {
-    border-radius: 0.5cm;
-    width: 100%;
+.card {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2rem;
+  position: relative;
+  padding-bottom: 5rem;
 }
-@media screen and (max-width: 650px){
-    .main_box{
-        display: inline-block;
-    }
-    .text h1{
-        font-size: 15px;
-    }
-    .menu_bar {
-        border: solid;
-        width: max-content;
-        background-color:rgba(64, 120, 110, 1)
-    }
+.card .item1 {
+  position: relative;
+}
+.card .item2 {
+  position: relative;
+}
+.card .item3 {
+  position: relative;
+}
+.card .item4 {
+  position: relative;
+}
+.card .item1 p {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+.card .item2 p {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+.card .item3 p {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+.card .item4 p {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+.card .item1 img {
+  position: absolute;
+  bottom: 10px;
+  left: 25px;
+  border-radius: 20px;
+}
+.card .item2 img {
+  position: absolute;
+  bottom: 10px;
+  left: 25px;
+  border-radius: 20px;
+}
+.card .item3 img {
+  position: absolute;
+  bottom: 10px;
+  left: 25px;
+  border-radius: 20px;
+}
+.card .item4 img {
+  position: absolute;
+  bottom: 10px;
+  left: 25px;
+  border-radius: 20px;
+}
+.item {
+  width: 300px;
+  height: 250px;
+  background-color: #0c3d35;
+  border-radius: 2rem;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 10px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    
+}
+.card_page2 {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 2rem;
+  position: relative;
+  padding-bottom: 5rem;
+}
+.card_page2 .item1 {
+  position: relative;
+}
+.card_page2 .item2 {
+  position: relative;
+}
+.card_page2 .item3 {
+  position: relative;
+}
+.card_page2 .item4 {
+  position: relative;
+}
+.card_page2 .item1 p {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+}
+.card_page2 .item2 p {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+}
+.card_page2 .item3 p {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+}
+.card_page2 .item4 p {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+}
+.card_page2 .item1 img {
+  position: absolute;
+  bottom: 10px;
+  left: 25px;
+  border-radius: 20px;
+}
+.card_page2 .item2 img {
+  position: absolute;
+  bottom: 10px;
+  left: 25px;
+  border-radius: 20px;
+}
+.card_page2 .item3 img {
+  position: absolute;
+  bottom: 10px;
+  left: 25px;
+  border-radius: 20px;
+}
+.card_page2 .item4 img {
+  position: absolute;
+  bottom: 10px;
+  left: 25px;
+  border-radius: 20px;
+}
+.change_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.change_page h2{
+  color: white;
+}
+.button_all {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: white;
+  padding: 5px;
+  background-color: #0c3d35;
+  border-radius: 1rem;
+}
+
+.text {
+  font-size: 40px;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  color: white;
+}
+.text2 {
+  color: white;
+}
+.text2 pre{
+  padding-top: 15px;
+}
+.text {
+  font-size: 4vw;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  color: white;
+}
+.item p {
+  font-size: 1.2vw;
+  opacity: .6;
+}
+.con-foot{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+.foot ul{
+  list-style: none;
+}
+.foot li a{
+  text-decoration: none;
 }
